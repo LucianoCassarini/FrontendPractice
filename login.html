@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Login</h2>
+      <form id="forma" name="forma" method="POST">
+        <div class="elemento">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required="true" />
+        </div>
+        <div class="elemento">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required="true"
+          />
+        </div>
+        <div class="elemento">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

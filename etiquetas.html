@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas</title>
+</head>
+<body>
+    <h1>Etiquetas Comunes</h1>
+    <h1>Titulos:</h1>
+    <h1>esta es una etiqueta h1</h1>
+    <h2>esta es una etiqueta h2</h2>
+    <h3>esta es una etiqueta h3</h3>
+
+    <p>...... y así podemos ir achicando el titulo
+        mientras mas grande sea el valor que acompaña a h
+        más pequeño será el titulo.
+        HTML5 actualmente reconoce hata
+        la etiqueta h6.
+    </p>
+
+    <h1>Parrafos:</h1>
+    <p>
+         p es la etiqueta usada para 
+        representar un parrafo dentro de HTML5. <br/>
+        Tambien podemos usar la etiqueta br para hacer un salto 
+        de linea.
+        <hr/>
+        Para hacer una linea horizontal a modo de separador, podemos
+        usar la etiqueta hr.
+        <pre>
+            Para insertar un parrafo tal cual lo agregamos 
+                al HTML vamos a usar la etiqueta pre.
+        </pre>
+    </p>
+
+    <h1>Links:</h1>
+    <p>Con la etiqueta a podemos insertar links en nuestro html, 
+        esta posee un atributo href = "Link donde queremos redireccionar"
+        por ejemplo se puede usar para redireccionar a otra pestaña de nuestra 
+        página o una dirección externa:
+    </p>
+
+    <a href="index.html">Inicio</a>
+    <!--Hacemos un salto de linea para que no se junten ambos links-->
+    <br/>
+    <a href="https://github.com/LucianoCassarini" target="_blank">
+        mi gitHub
+    </a>
+
+    <p>si estamos usando esta etiqueta para navegar entre nuestra página
+        probablemente querramos que esta se abra en la pestaña en la que nos
+        encontramos actualmente, sin embargo para links a páginas externas 
+        quizas nos resulte más combeniente que este se abra en una página nueva,
+        para ello, usamos dentro de la etiqueta a el siguiente atributo: target="_blank"
+
+    </p>
+
+    <!--Link para mandar email-->
+    <a href="mailto:lucianogabrielcassarini@gmail.com?subject=Contacto&body=prueba email">Enviar email</a>
+    <h1>Imagenes:</h1>
+    <p>
+        Para mostrar una imagen que tenemos dentro de nuestro proyecto,
+        usamos la etiqueta img, la cual tiene un atributo llamado src el cual
+        debe contener la ruta/dirección de la imagen que queremos mostrar
+        (podemos encontrar esta ruta mas facilmente tocando ctl+spaceBar).
+        <br>
+        Tambien podemos acceder a una imagen a travez de su url.
+    </p>
+    <img src="Imagenes/html5.png" />
+
+    <p>EL siguiente ejemplo muestra que sucede si la ruta de la imagen está mal</p>
+    <img src="globalmentoring.com/css"/>
+    <p>Para evitar esto podemos usar el atributo alt = 'textoAlternativo', de esta forma resultaría en algo como:</p>
+    <img src="globalmentoring.com/css" alt="Logo css"/>
+
+    <p>
+        Podemos usar la propiedad title = 'nombre de la imagen', la diferencia entre esta propiedad y el texto alternativo es que esta
+        aparece cuando pasamos el cursor por encima de la imagen, mientras que alt aparece cuando la dirección de la imagen no existe.
+        <br>
+        Pro ultimo, podemos modificar el ancho (usando la propiedad width = "cuantos pixeles queremos que ocupe la imagen")
+        y el alto(usando la propiedad height = "cuantos pixeles queremos que ocupe la imagen") .
+    </p>
+    <img src="Imagenes/css3.png" alt="Logo CSS" width="50px" height="50px" title="Logo CSS"/>
+
+    <hr/>
+    <a href="index.html">Inicio</a>
+    <br/>
+    <a href="atributos.html">Atributos</a>
+
+    <!-- formatear texto <p></p>
+        <b></b> pone el texto en negrita 
+        <strong></strong> esteticamente es normal pero 
+            denota internamente denota que el texto es importante
+        <i></i> pone el texto en italica
+        <em></em> pone el texto en italica  lo emfatiza
+        <small></small> agrega un texto más pequeño
+        <mark></mark> pone una marca sobre el texto
+        <del></del> pone una linea sobre el texto, es texto eliminado
+        <ins></ins> simboliza que se está insertando, es subrallado
+        <sub></sub> para mostrar como subindices
+        <sup></sup> para mostrar como superindice
+        <code></code> para denotar que es codigo
+        https://dev.w3.org/html5/html-author/charref podemos traer simbolos de acá
+            se usa para caracteres especiales como por ejemplo <>! para evitar problemas
+            en el sistema
+        -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+/*para que un atributo de un archivo css tenga prioridad sobre
+un atributo definido en HTML de manera interna, podemos 
+agregar a la derecha del atributo !important para darle 
+prioridad al mismo. por ejemplo:
+    h1{
+        color: aqua !important;
+    }
+*/
+
+/*Selector Universal CSS*/
+/* {
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
+*/
+
+/*Selector ID en css*//*
+#titulo{
+    color: crimson;
+    text-align: center;
+}
+*/
+
+/*Clase CSS*//*
+.centrar{
+    text-align: center;
+}
+
+.texto_grande{
+    font-size: 20px;
+}
+*/
+
+/*Agrupar Selectores CSS*//* 
+h1, h2, p{
+    color: crimson;
+    text-align: center;
+} */
+
+ /*solo funciona si es un elemento p y ademas se le
+        aplica la clase de centrar*//*
+p .centrar{ 
+   
+    text-align: center;
+}
+*/
+
+/*
+==========================================================
+                        BORDES
+==========================================================
+podemos aplicar los siguientees bordes usando border o 
+para definirlo a parte usando border-style:
+solido = solid
+linea cortada = dashed
+doble = double
+linea de puntos = dotted
+borde con surco = groove
+borde con cresta = ridge
+borde con recuadro = inset
+borde inverso = outset
+borde oculto = hidden
+borde mixto::
+    border-style: dotted solid dashed double
+
+ancho de bordes:
+border-width: arribapx derechapx inferiorpx izquierdapx
+anchos standar: thin, medium, thick
+
+se pueden aplicar distintos colores la mismo borde:
+    border-color: crimson hotpinck gold lime;
+
+para redondear bordes usamos
+    border-radius:
+    tambien podemos redondear por esquinas usando
+    border-radius: 20px 0px 10px 0px 
+
+=============================================================
+                            Box Model
+=============================================================
+
+
+podemos usar un borde exterior al borde con 
+    outline: 10px solid blue;
+    para separar el outline del border usamos
+         ouline-offset: 10px; tenemos separación de 10 px
+
+
+box-sizing: border-box; sirve para incluir el pading en el tamaño
+del contenedor
+
+podemos definir el tamaño maximo del ancho y alto
+    max-width: 300px;
+    max-height 100px;
+    podemos definirlos tambien con porcentajes de pantalla
+        disponible usando el simbolo %
+
+Podemos centrar nuestros elementos usando:
+    margin: 0 auto;
+
+margin: inherit; se utiliza en los elementos internos
+    para heredar de la clase externa el margen
+
+fusion de margenes inferiores y superiores (margin colapse)
+
+float: left para flotar un bloque hacia la izquierda
+
+============================================================
+                            Fondos
+============================================================
+
+poner una imagen como fondo:
+    background-image: url("usl/img"); si usamos esto la imagen se
+        puede repetir dependiendo del tamaño de la pantalla y la imagen usada
+    para queno pase lo anteriormente dicho:
+        background-repet: repeat-x; *solo se repite en el eje x
+        background-repet: repeat-y;
+        background-repet: none; para que no se repita
+
+    background-position: ; podemos ubicar la imagen del fondo como queremos
+
+    background-attachment: fixed; dejamos la imagen fija
+        para que no se mueva si hacemos scroll
+
+=============================================================
+                        Mejoras de Texto
+=============================================================
+
+
+*/
+h1{
+    color: crimson;
+    /*background-color: beige;*/
+    text-align: center;
+    text-transform: uppercase; /*transforma todo a mayuscula*/
+    text-shadow: 2px 2px 2px #ced4da; /*ejex ejey blur color*/
+    letter-spacing: 2px; /*separación de caracteres*/
+    word-spacing: 10px; /*separer palabras*/
+}
+
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color: white;
+}
+
+.texto{
+    text-align: justify;
+    /*direction: rtl; muestra el texto de derecha a izquierda*/ 
+    text-decoration: none; /*decorar texto(tachado, subrayado o linea encima)*/
+    text-indent: 30px; /*dejar sangria*/
+    line-height: 1; /*no se dice que unidad son, aumenta espacio entre lineas*/
+    /*white-space: nowrap; envuelve nuestras lineas*/
+    text-shadow: 1px 1px 2px #ced4da;
+}
+
+.fuente{
+    /*define la fuente*/
+    font-family: 'Courier New', Courier, monospace;
+    
+    /*Estilo de fuente*/
+    font-style: italic;
+
+    /*Ancho de la Fuente*/
+    font-weight: bolder;
+
+    /*Variantes de Fuentes*/
+    font-variant: small-caps; /*todo mayuscula pero la primera
+        letra de la palabra es más grande*/
+    
+    /*Tamaño de la fuente*/
+    font-size: small; /*se puede asignar en px, los navegadores
+        por defecto suelen asignar 16px*/
+    
+    /*font-size: 3vw; si queremos tomar como referencia el ancho
+        (w), alto(h), la v va siempre y viene de viewport, si
+        se modifica el alto o ancho se modifica el tamaño de la fuente*/
+    
+    
+}
+
+
+ 

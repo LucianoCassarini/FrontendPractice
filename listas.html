@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tablas.html">Tablas</a></li>
+        <li><a href="atributos.html">atributos</a></li>
+    </ul>
+
+
+    <h3>Listas no ordenadas:</h3>
+    <!--<ul> unorder list, listas no ordenadas-->
+    <ul style="list-style-type: square;">
+        <!--con style="list-style-type: " podemos modificar
+        la viñeta que acompaña al elemento de la lista-->
+        <li>Juan</li> <!--Agrega elementos-->
+        <li>Karla</li>
+        <li>Maria</li>
+        <li>Carlos
+            <!--Se pueden anidar listas no ordenadas de esta forma-->
+            <ul>
+                <li>Tel. 3404-516686</li>
+                <li>Dirección: Corrientes 2565</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Listas Ordenadas:</h3>
+    <!-- <ol> order list, listas ordenadas-->
+    <ol type="A">
+        <!--type nos deja elegir de que forma queremos enumerar la lista-->
+        <li>Universidad Java</li>
+        <li>Universidad Python</li>
+        <li>Universidad Excel</li>
+    </ol>
+
+    <h3>Listas de Descripción:</h3>
+    <dl>
+        <!--Description lists-->
+        <dt>Java: </dt>
+        <!-- <dt> description term-->
+        <dd>Creador: James Gosling</dd>
+        <!--<dd> description data-->
+        <dt>Python: </dt>
+        <dd>Creador: Guido van Rossum</dd>
+        <dt>JavaScript: </dt>
+        <dd>Creador: Brendan Eich</dd>
+    </dl>
+</body>
+</html>

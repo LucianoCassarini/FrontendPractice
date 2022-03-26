@@ -1,0 +1,204 @@
+body{
+    background-color: #212529;
+}
+
+h1{
+    color: #adb5bd;
+    text-align: center;
+}
+
+p{
+    color: #dee2e6;
+    background-color: #495057;
+
+    /*Si definimos padding border y margin con un solo elemento
+    este se aplicará a los 4 lados del contenedor:
+    
+    padding: 15px;
+    border: 10px solid powderblue;
+    margin: 10px;
+    */
+
+    /*se puede especificar el valor de cada uno de la misma forma
+    para los 3 atributos:
+    
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    */
+
+    /*Una forma más sencilla de definor un valor para cada uno de los lados
+    del contenedor es definir sus valores en el orden 
+    arriba->derecha->abajo->izquierda:margin-left:
+    */
+    /*margin: 40px 10px 20px 10px;*/
+
+    /*si queremos el mismo valor para izquierda y derecha o arriba y abajo podemos simplificar
+    haciendo:   margin: 40px 10px;
+    esto nos deja 40px arriba y abajo y 10px a la izquierda y derecha
+
+    estas propiedades se usar tambien para border y padding
+    */
+    padding: 15px;
+    border: 10px solid #343a40;
+    margin:auto 50px; /*centrado de manera Horizontal*/
+    text-align: center; /*Cerntra el texto del contenedor*/
+}
+
+/*
+    Podemos usar paletas de colores de la página:
+        https://coolors.co/
+*/
+
+/*=========================================================*/
+/*                          Links                          */
+/*=========================================================*/
+
+/*es el link por default que generalmente se muestra en azul*/
+/*
+a:link{
+    color: sandybrown;
+    text-decoration: none; **quita subrallado**
+}
+*/
+
+/*link luego de dar click*/
+/*a:visited{
+    color: salmon;
+    text-decoration: none;
+}*/
+
+/*cuando nos paramos encima del link*/
+/*a:hover{
+    color: springgreen;
+    text-decoration: underline; *agrega subrallado*
+}*/
+
+/*cuand mantenemos apretado el link*/
+/*a:active{
+    color: seagreen;
+    text-decoration: none;
+} */
+
+/*Usar link a modo de boton*/
+
+a:link, a:visited{
+    background-color: rgb(24, 24, 43);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /*para que los elementos no se encimen*/
+}
+
+a:hover, a:active{
+    background-color: black;
+}
+
+/*=========================================================*/
+/*                          Tablas                         */
+/*=========================================================*/
+table{
+    width: 100%;
+}
+
+table, th, td{
+    color: rgb(212, 185, 185);
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*border-spacing: 5px;*/
+    padding: 5px;
+}
+
+caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+th{
+    background-color: #1d3557;
+}
+
+/*Renglones pares*/
+tr:nth-child(even){
+    background-color: #3f423d;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(31, 31, 34);
+}
+/*
+td{
+    text-align: center;
+}
+
+th{
+    text-align: left;
+}
+*/
+
+/*=========================================================*/
+/*                          NavList                        */
+/*=========================================================*/
+
+h3{
+    color: #a5afbd
+}
+
+ul{
+    list-style-type: none;
+    background-color: rgb(24, 24, 43);
+    overflow: hidden; /*para que no quede info al lado*/
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    float: left; /*para que queden horizontal*/
+    display: block; /*se despliegan como un bloque*/
+    color: burlywood;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(2, 2, 29);
+}
+
+/*=========================================================*/
+/*                    Listas ordenadas                     */
+/*=========================================================*/
+
+ol{
+    list-style: none;
+    /*Especificamos que usaremos la variable contador*/
+    counter-reset: contador;
+    /*de esta forma "creamos" la variable contador*/
+}
+
+ol li{
+    counter-increment: contador;
+    /*incrementamos el valor cuando entramos en una li*/
+    color: cornsilk;
+}
+
+ol li::before{
+    /* ::before nos permite poner algo antes que empiece la linea
+    en este caso agregamos la palabra curso al principio */
+    content: 'Curso ' counter(contador) ') ';
+    /*con counter crearemos una variable contador*/
+    color: cadetblue;
+}
+
+ol li::after{
+    /* ::before nos permite poner algo al final de la linea
+    en este caso agregamos un puto final */
+    content: '.';
+}
+
+
+
