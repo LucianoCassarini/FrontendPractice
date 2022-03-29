@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="Posicionamiento.css" />
+  </head>
+
+
+  <body>
+    <!--=====================================================-->
+    <!--Centrar elementos div-->
+    <!--=====================================================-->
+    <h1>Centrar DIV</h1>
+    <div>Elemento de tipo div</div>
+
+    <!--=====================================================-->
+    <!--Posicionamiento Static-->
+    <!--=====================================================-->
+    <h1>Posicionamiento Estatico</h1>
+    <p>
+      Todos los elementos div que no tengan especificada una posicion en
+      particular serán entonces de tipo static, no le afectan los atributos left
+      right top o bottom.
+    </p>
+
+    <!--=====================================================-->
+    <!--Posicionamiento Relative-->
+    <!--=====================================================-->
+    <h1>Posicionamiento Rlativa</h1>
+    <div class="div_relative">Elemento con pos. relativa</div>
+    <p>Los otros elementos no ocupan el lugar que debería ocupar el div</p>
+
+    <!--=====================================================-->
+    <!--Posicionamiento Fixed-->
+    <!--=====================================================-->
+    <h1>Posicionamiento Fixed o Ajustado</h1>
+    <div class="div_fixed">Elemento con pos. ajustada</div>
+    <p>
+      Los ddemas elementos se pocisionan como si este elemento no existiera y
+      este se coloca por encima de ellos. Podemos colocarlo en cualquier lugar
+      de nuetra pagina.
+    </p>
+
+    <!--=====================================================-->
+    <!--Posicionamiento Absolute-->
+    <!--=====================================================-->
+    <h1>Posicionamiento Absolute</h1>
+    <div style="position: relative">
+      div Padre
+      <div class="div_absolute">Elemento con pos. Absoluta</div>
+    </div>
+
+    <p>
+      Se posiciona de manera absoluta pero teniendo en cuenta el elemento que lo
+      contiene, es decir, dentro del div en el que esté definido.
+    </p>
+
+    <!--=====================================================-->
+    <!--Posicionamiento Sticky-->
+    <!--=====================================================-->
+    <h1>Centrar elemento</h1>
+    <p>Elemento de parrafo</p>
+    <div class="div_sticky">Elemento de tipo div Sticky</div>
+    <p style="padding-bottom: 2000px">Segundo elemento parrafo</p>
+  </body>
+
+
+</html>

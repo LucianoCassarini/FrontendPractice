@@ -1,0 +1,50 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div{
+    width: 50%; /*Usa el 5% de la pantalla disponible*/
+    /* width: 400px; Ocupa 400px
+    max-width: 200px; Como maximo ocupa 200px */
+    border: 3px solid firebrick;
+    margin: auto; /*centramos el elemnto*/
+}
+
+.div_relative{
+    /*se mueve 100px para abajo y 50px a la derecha*/
+    position: relative;
+    top: 100px; 
+    left: 50px;
+    /* bottom: 50px;
+    right: 50px; */
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto; 
+}
+
+.div_fixed{
+    /* se ajusta con respecto al view port un top de 100px y 50px a la izquierda */
+    position: fixed;
+    top: 100px; 
+    left: 50px;
+    border: 3px solid firebrick;
+}
+
+.div_absolute{
+    /* Para pocisionarlo dentro de otro div, el mismo no puede ser de tipo static */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 3px solid firebrick;
+}
+
+.div_sticky{
+    position: sticky;
+    position: -webkit-sticky;/*Para que funcione con safari hay que agregar la corrección*/
+    /*En cuanto el elemento sale del viewPort funciona de manera fija
+    NO FUNCIONA EN EXPLORER*/
+    /*Ideal para menus de navegación*/
+    top: 0;
+    border: 3px solid firebrick;
+}
