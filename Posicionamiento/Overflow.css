@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;/*hay que especificar para usar overflow*/
+    margin: auto;
+   /* overflow: visible; propiedad por default
+   muestra todo lo que se sale del elemento div */
+   /*overflow: hidden; se oculta todo lo que sale del div*/
+   /*overflow: scroll; se agrega barra de scroll*/
+   overflow: auto; /*solo se muestran las barras en caso de ser necesario*/
+
+   /*overflow-x: y overflow-y sirve para configurarlo solo para el eje x o y*/
+}

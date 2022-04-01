@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;/*hay que especificar para usar overflow*/
+    overflow: auto;
+}
+
+div.contenedor.flotado{
+    float: left; /*los elementos se van agregando a su derecha*/
+}
+
+div.contenedor.flotado.contenedor1{
+    border: 3px dashed greenyellow;
+}
+
+div.contenedor.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float: right;
+}
+
+div.contenedor.contenedor3{
+   /* clear: left; limpia los elementos flotados a la izquierda*/
+   /* clear: right; limpia los elementos flotados a la derecha*/
+   clear: both; /*limpia todos los elementos flotados*/
+   border: 3px dashed darkorange;
+   margin: auto;
+}
